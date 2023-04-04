@@ -3,6 +3,10 @@ class ApplicationController < ActionController::Base
 
   # Add your actions below this line
   # ================================
+  def index
+    render({ :template => "game_templates/rules.html.erb"})
+    end
+
 def homepage
 render({ :template => "game_templates/rules.html.erb"})
 end
